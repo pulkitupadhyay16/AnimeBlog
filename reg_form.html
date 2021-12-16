@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Register Form </title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+              @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+        body {
+          background:linear-gradient(to right, #78a7ba 0%, #385D6C 50%, #78a7ba 99%);
+        }
+
+        .signup-form {
+          font-family: "Roboto", sans-serif;
+          width:650px;
+          margin:30px auto;
+          background:linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+          border-radius: 10px;
+        }
+        .dropbtn {
+          background-color: #04AA6D;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+
+
+        /*---------------------------------------*/
+        /* Form Header */
+        /*---------------------------------------*/
+        .form-header  {
+          background-color: #EFF0F1;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+
+        .form-header h1 {
+          font-size: 30px;
+          text-align:center;
+          color:#666;
+          padding:20px 0;
+          border-bottom:1px solid #cccccc;
+        }
+
+        /*---------------------------------------*/
+        /* Form Body */
+        /*---------------------------------------*/
+        .form-body {
+          padding:10px 40px;
+          color:#666;
+        }
+
+        .form-group{
+          margin-bottom:20px;
+        }
+
+        .form-body .label-title {
+          color:#1BBA93;
+          font-size: 17px;
+          font-weight: bold;
+        }
+
+        .form-body .form-input {
+            font-size: 17px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 34px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: #333333;
+            text-align: left;
+            border: 1px solid #d6d6d6;
+            border-radius: 4px;
+            background: white;
+            outline: none;
+        }
+
+
+
+        .horizontal-group .left{
+          float:left;
+          width:49%;
+        }
+
+        .horizontal-group .right{
+          float:right;
+          width:49%;
+        }
+
+        input[type="file"] {
+          outline: none;
+          cursor:pointer;
+          font-size: 17px;
+        }
+
+        #range-label {
+          width:15%;
+          padding:5px;
+          background-color: #1BBA93;
+          color:white;
+          border-radius: 5px;
+          font-size: 17px;
+          position: relative;
+          top:-8px;
+        }
+
+
+        ::-webkit-input-placeholder  {
+          color:#d9d9d9;
+        }
+
+        /*---------------------------------------*/
+        /* Form Footer */
+        /*---------------------------------------*/
+        .signup-form .form-footer  {
+          background-color: #EFF0F1;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          padding:10px 40px;
+          text-align: right;
+          border-top: 1px solid #cccccc;
+          clear:both;
+        }
+
+        .form-footer span {
+          float:left;
+          margin-top: 10px;
+          color:#999;  
+          font-style: italic;
+          font-weight: thin;
+        }
+
+        .btn {
+          display:inline-block;
+          padding:10px 20px;
+          background-color: #1BBA93;
+          font-size:17px;
+          border:none;
+          border-radius:5px;
+          color:#bcf5e7;
+          cursor:pointer;
+        }
+
+        .btn:hover {
+          background-color: #169c7b;
+          color:white;
+        }@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+        /*---------------------------------------*/
+        /* Register Form */
+        /*---------------------------------------*/
+        body {
+          background:linear-gradient(to right, #78a7ba 0%, #385D6C 50%, #78a7ba 99%);
+        }
+
+        .signup-form {
+          font-family: "Roboto", sans-serif;
+          width:650px;
+          margin:30px auto;
+          background:linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+          border-radius: 10px;
+        }
+
+        /*---------------------------------------*/
+        /* Form Header */
+        /*---------------------------------------*/
+        .form-header  {
+          background-color: #EFF0F1;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+
+        .form-header h1 {
+          font-size: 30px;
+          text-align:center;
+          color:#666;
+          padding:20px 0;
+          border-bottom:1px solid #cccccc;
+        }
+
+        /*---------------------------------------*/
+        /* Form Body */
+        /*---------------------------------------*/
+        .form-body {
+          padding:10px 40px;
+          color:#666;
+        }
+
+        .form-group{
+          margin-bottom:20px;
+        }
+
+        .form-body .label-title {
+          color:#1BBA93;
+          font-size: 17px;
+          font-weight: bold;
+        }
+
+        .form-body .form-input {
+            font-size: 17px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 34px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: #333333;
+            text-align: left;
+            border: 1px solid #d6d6d6;
+            border-radius: 4px;
+            background: white;
+            outline: none;
+        }
+
+
+
+        .horizontal-group .left{
+          float:left;
+          width:49%;
+        }
+
+        .horizontal-group .right{
+          float:right;
+          width:49%;
+        }
+
+        input[type="file"] {
+          outline: none;
+          cursor:pointer;
+          font-size: 17px;
+        }
+
+        #range-label {
+          width:15%;
+          padding:5px;
+          background-color: #1BBA93;
+          color:white;
+          border-radius: 5px;
+          font-size: 17px;
+          position: relative;
+          top:-8px;
+        }
+
+
+        ::-webkit-input-placeholder  {
+          color:#d9d9d9;
+        }
+
+        /*---------------------------------------*/
+        /* Form Footer */
+        /*---------------------------------------*/
+        .signup-form .form-footer  {
+          background-color: #EFF0F1;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          padding:10px 40px;
+          text-align: right;
+          border-top: 1px solid #cccccc;
+          clear:both;
+        }
+
+        .form-footer span {
+          float:left;
+          margin-top: 10px;
+          color:#999;  
+          font-style: italic;
+          font-weight: thin;
+        }
+
+        .btn {
+          display:inline-block;
+          padding:10px 20px;
+          background-color: #1BBA93;
+          font-size:17px;
+          border:none;
+          border-radius:5px;
+          color:#bcf5e7;
+          cursor:pointer;
+        }
+
+        .btn:hover {
+          background-color: #169c7b;
+          color:white;
+        }
+    </style>
+  </head>
+ <body>
+<form class="signup-form" action="/register" method="post">
+
+      <!-- form header -->
+      <div class="form-header">
+        <h1>Create Account</h1>
+      </div>
+
+      <!-- form body -->
+      <div class="form-body">
+
+        <!-- Firstname and Lastname -->
+        <div class="form-group">
+          <div class="form-group">
+            <label for="Username" class="label-title">Username *</label>
+            <input type="text" id="firstname" class="form-input" placeholder="enter your username" required="required" />
+          </div>
+	
+          
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email" class="label-title">Email*</label>
+          <input type="email" id="email" class="form-input" placeholder="enter your email" required="required">
+        </div>
+
+        <!-- Passwrod and confirm password -->
+        <div class="horizontal-group">
+          <div class="form-group ">
+            <label for="password" class="label-title">Password *</label>
+            <input type="password" id="password" class="form-input" placeholder="enter your password" required="required">
+          </div>
+          <div class="form-group">
+            <label for="confirm-password" class="label-title">Confirm Password *</label>
+            <input type="password" class="form-input" id="confirm-password" placeholder="enter your password again" required="required">
+          </div>
+        </div>
+	<div class="form-group">
+          <div class="form-group" >
+            <label class="label-title">country</label>
+            <select class="form-input" id="level" >
+              <option value="India">India</option>
+              <option value="Usa">Usa</option>
+              <option value="China">China</option>
+            </select>
+          </div>
+
+        <!-- Gender and Language -->
+        <div class="horizontal-group">
+          <div class="form-group ">
+            <label class="label-title">Gender:</label>
+            <div class="input-group">
+              <label for="male"><input type="radio" name="gender" value="male" id="male"> Male</label>
+              <label for="female"><input type="radio" name="gender" value="female" id="female"> Female</label>
+            </div>
+          </div>
+          <div class="form-group ">
+            <label class="label-title">Language</label>
+            <div >
+              <label><input type="checkbox" value="Hindi">Hindi</label>
+              <label><input type="checkbox" value="English">English</label>
+              <label><input type="checkbox" value="Spanish">Spanish</label>
+              </div>
+          </div>
+        </div>
+
+       <div class="form-group">
+	<label for="inputtxt" class="label-title">Phone number</label>
+	<input type="number" id="inputtxt"value="999999XXX" class="form-input">
+	</div>
+
+        <!-- Resume and Age -->
+        <div class="horizontal-group">
+          <div class="form-group " >
+            <label for="choose-file" class="label-title">Upload Resume</label>
+            <input type="file" id="choose-file" size="15">
+          </div>
+          <div class="form-group ">
+            <label for="experience" class="label-title">Age</label>
+            <input type="number" min="18" max="80"  value="18" class="form-input">
+          </div>
+        </div>
+
+        
+        <div class="form-group">
+          <label for="choose-file" class="label-title">Address</label>
+          <textarea class="form-input" rows="4" cols="50" style="height:auto"></textarea>
+        </div>
+      </div>
+
+	<div class="form-group">
+	<label for="zip code" class="label-title">Zip code</label>
+	<input type="number" value="6 digit zip" class="form-input">
+	</div>
+
+      <!-- form-footer -->
+      <div class="form-footer">
+        <span>* required</span>
+        <button type="submit" class="btn">Create</button>
+ 	<button type="reset" class="btn">Reset</button>
+      </div>
+
+    </form>
+
+   
+   <script>
+     function ValidateEmail(email) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
+}
+function phonenumber(inputtxt)
+{
+  var phoneno = /^\d{10}$/;
+  if((inputtxt.value.match(phoneno))) 
+        {
+      return true;
+        }
+      else
+        {
+        alert("enter 10 digit phone number !");
+        return false;
+        }
+}
+   </script>
+
+ 
+    
+ </body>
+</html>
